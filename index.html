@@ -7,7 +7,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--*************-NAVIGATION-*************-->
 
@@ -25,7 +25,7 @@
       <span id="closeNav"   onclick="closeNav()">&times;</span></td>
       <td class="logo" onclick="document.location = 'index.html'"><img src="public/images/yser.png"></td>
     </tr>
-    <tr id = "link" onclick="document.location = 'data.html'"> 
+    <tr id = "link" onclick="document.location = 'data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -46,12 +46,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--***********-FOOTER-**********-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -69,7 +69,6 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
@@ -77,7 +76,7 @@
   <div>
     <button style="display: none" onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button id="sign_in" class="log" >S'identifier</button>
-    <button style="display: none" id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button style="display: none" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1>Bienvenue</h1>
     <p>Bienvenue sur yser, la plateforme qui permet de r&eacute;cup&eacute;rer et de contr&ocirc;ler tes donn&eacute;es personnelles</p>
@@ -110,9 +109,9 @@
   <div id="law" class="home">
     <img src="public/images/law.png"/>
     <h1>DONN&Eacute;ES PERSONNELLES :</br> QUELS SONT MES DROITS ?</h1>
-    <p>En tant que citoyen Europ&eacute;en, tu as des droits sur les donn&eacute;es personnelles que tu confies chaque jour aux entreprises, et yser est l&agrave; pour t&#39;aider &agrave; les exercer. Le RGPD (R&eacute;glement Europ&eacute;en sur la Protection des Donn&eacute;es, mai 2018), te conf&egrave;re les droits suivants sur tes donn&eacute;es personnelles : 
+    <p>En tant que citoyen Europ&eacute;en, tu as des droits sur les donn&eacute;es personnelles que tu confies chaque jour aux entreprises, et yser est l&agrave; pour t&#39;aider &agrave; les exercer. Le RGPD (R&eacute;glement Europ&eacute;en sur la Protection des Donn&eacute;es, mai 2018), te conf&egrave;re les droits suivants sur tes donn&eacute;es personnelles :
     <br/>- Droit &agrave; l&#39;acc&egrave;s
-    <br/>- Droit &agrave; l&#39;oubli 
+    <br/>- Droit &agrave; l&#39;oubli
     <br/>- Droit &agrave; la rectification
     <br/>- Droit &agrave; la portabilit&eacute;</p>
     <p>En savoir plus</p>
@@ -122,7 +121,7 @@
     <img src="public/images/company.png"/>
     <p>Nous collaborons avec des entreprises qui ont pris le tournant de la transparence.</p>
     <p>Le d&eacute;veloppement de nouveaux droits conf&eacute;r&eacute;s &agrave; l&#39;individu sur ses donn&eacute;es doit &ecirc;tre l&#39;occasion d&#39;instaurer une relation de confiance entre services et utilisateurs plut&ocirc;t que de faire na&icirc;tre entre eux un rapport de d&eacute;fiance. L&#39;heure est &agrave; l&#39;&eacute;mergence d&#39;une telle collaboration plut&ocirc;t qu&#39;&agrave; la d&eacute;fense aveugle d&#39;une politique de r&eacute;tention des donn&eacute;es personnelles.</p>
-    </p>Voir la liste compl&egrave;te des entreprises</p> 
+    </p>Voir la liste compl&egrave;te des entreprises</p>
   </div>
 </div>
 <!--***********************MAIN END******************-->
@@ -157,12 +156,14 @@
       <span class="close">&times;</span>
       <h1>Cr&eacute;ez votre compte Yser</h1>
       <br/>
-      <form action="" method="post"">
+      <form action="" method="post">
+          <input type="text" name="lastname" placeholder="Nom">
+          <input type="text" name="name" placeholder="Pr&eacute;nom">
           <input type="text" name="login" placeholder="Adresse email">
           <input type="password" name="passwd" placeholder="Mot de passe">
           <input type="password" name="conf_passwd" placeholder="Confirmation du mot de passe">
           <br/>
-          <p style="margin-left: 15%;">T&eacute;l&eacute;chargez votre carte d&#39;identit&eacute; (optionel) 
+          <p style="margin-left: 15%;">T&eacute;l&eacute;chargez votre carte d&#39;identit&eacute; (optionel)
             <img id="up_Upload" onclick="hideUpload()" src="public/images/up.png" onmouseover="this.src='public/images/up_hover.png'" onmouseout="this.src='public/images/up.png'"/>
             <img  id="down_Upload" onclick="showUpload()" src="public/images/down.png" onmouseover="this.src='public/images/down_hover.png'" onmouseout="this.src='public/images/down.png'"/>
           </p>
@@ -194,4 +195,4 @@
 <script  src="public/js/background.js"></script>
 
 
-</html> 
+</html>

@@ -8,7 +8,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--*************-NAVIGATION-*************-->
 
@@ -26,7 +26,7 @@
       <span id="closeNav"   onclick="closeNav()">&times;</span></td>
       <td class="logo" onclick="document.location = 'index.html'"><img src="public/images/yser.png"></td>
     </tr>
-    <tr id = "link" onclick="document.location = 'data.html'"> 
+    <tr id = "link" onclick="document.location = 'data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -47,12 +47,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--***********-FOOTER-**********-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -71,7 +71,6 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
@@ -79,7 +78,7 @@
   <div>
     <button style="display: none" onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button id="sign_in" class="log" >S&#39;identifier</button>
-    <button style="display: none" id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button style="display: none" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><img src="public/images/law.png">Mes Droits</h1>
     <p>Quels sont les nouveaux droits que me conf&egrave;rent le RGPD (R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es) ?</p>
@@ -147,12 +146,14 @@
       <span class="close">&times;</span>
       <h1>Cr&eacute;ez votre compte Yser</h1>
       <br/>
-      <form action="" method="post"">
+      <form action="" method="post">
+          <input type="text" name="lastname" placeholder="Nom">
+          <input type="text" name="name" placeholder="Pr&eacute;nom">
           <input type="text" name="login" placeholder="Adresse email">
           <input type="password" name="passwd" placeholder="Mot de passe">
           <input type="password" name="conf_passwd" placeholder="Confirmation du mot de passe">
           <br/>
-          <p style="margin-left: 15%;">T&eacute;l&eacute;chargez votre carte d&#39;identit&eacute; (optionel) 
+          <p style="margin-left: 15%;">T&eacute;l&eacute;chargez votre carte d&#39;identit&eacute; (optionel)
             <img id="up_Upload" onclick="hideUpload()" src="public/images/up.png" onmouseover="this.src='public/images/up_hover.png'" onmouseout="this.src='public/images/up.png'"/>
             <img  id="down_Upload" onclick="showUpload()" src="public/images/down.png" onmouseover="this.src='public/images/down_hover.png'" onmouseout="this.src='public/images/down.png'"/>
           </p>
@@ -182,4 +183,4 @@
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script  src="public/js/background.js"></script>
 
-</html> 
+</html>

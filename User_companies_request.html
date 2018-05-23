@@ -7,7 +7,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--******-NAVIGATION-*****-->
 
@@ -17,7 +17,7 @@
 <div id="particles-js"></div>
 
  <nav id="sidenav">
-  
+
   <!--Link Menu-->
   <table id ="menu">
     <tr id ="logo" onclick="document.location = 'User_home.html'">
@@ -31,7 +31,7 @@
       <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
     </tr>
 
-    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+    <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -52,12 +52,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--******-FOOTER-*****-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -75,15 +75,14 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
 <header>
   <div>
-    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
-    <button  id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><a href="User_data.html">&#8592;</a>&emsp;Demande aupr&egrave;s d&#39;une autre entreprise</h1>
     <p>Tu ne trouves pas l&rsquo;entreprise qui t&rsquo;int&eacute;resse ? Nous nous effor&ccedil;ons de colaborer avec le maximum d'entreprises possibles. Indique nous via le formulaire ci-dessous le nom de l'entreprise que tu souhaiterais voir pr&eacute;sente sur le site, ainsi que le sujet de ta demande. Nous la contacterons et lui proposerons de r&eacute;pondre &agrave; ta requ&ecirc;te sur la plateforme yser.</p>
@@ -98,7 +97,7 @@
       <input type="text" name="login" placeholder="Ton identifiant client, num&eacute;ro de soci&eacute;taire, ...">
       <input type="text" name="company" placeholder="Nom de l&#39;entreprise">
       <p>Motif de la demande</p>
-        
+
         <label>
           <input type="radio" name="selection" value="get" checked>
           <span class="radio"></span>
@@ -137,7 +136,7 @@
 
     <p>Si l&rsquo;entreprise ne souhaite pas passer pas notre service, elle te recontactera par mail (c&rsquo;est pourquoi nous lui donnons ton mail).</p>
   </div>
-  
+
 </div>
 <!--*******************************************MAIN END**************************************-->
 </body>
@@ -151,4 +150,4 @@
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script  src="public/js/background.js"></script>
 
-</html> 
+</html>

@@ -1,5 +1,5 @@
 @font-face {
-font-family: 'Museo Sans Cyrl 300';
+font-family: 'MuseoSansCyrl300';
 font-style: normal;
 font-weight: normal;
 src: local('Museo Sans Cyrl 300'), url('MuseoSansCyrl_0.woff') format('woff');
@@ -7,12 +7,13 @@ src: local('Museo Sans Cyrl 300'), url('MuseoSansCyrl_0.woff') format('woff');
 
 
 body {
-    font-family: 'Abel', sans-serif; 
+    font-family: 'MuseoSansCyrl300';
     transition: margin-left .5s;
     margin-left:225px;
     margin-top :0;
     margin-right: 0;
     overflow-x: hidden;
+    background-color: #F7F7FF;
 }
 
 a {
@@ -24,14 +25,14 @@ a:visited {
     color: #414141;
 }
 input {
-    font-family: 'Abel', sans-serif; 
+    font-family: 'MuseoSansCyrl300';
 }
 
 button {
     border: none;
     background-color: inherit;
     float: right;
-    font-family: 'Abel', sans-serif; 
+    font-family: 'MuseoSansCyrl300';
     outline: none;
 }
 
@@ -56,7 +57,7 @@ h2 {
 }
 
 textarea {
-    font-family: 'Abel', sans-serif; 
+    font-family: 'MuseoSansCyrl300';
 }
 
 /*--------Scrollbar-------*/
@@ -64,13 +65,13 @@ textarea {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #F7FCFF; 
+    background: #F7FCFF;
 }
 ::-webkit-scrollbar-thumb {
     background: rgba(138, 162, 169, 0.7);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #424141; 
+    background: #424141;
 }
 
 
@@ -186,7 +187,7 @@ textarea {
 .table tr:nth-child(odd) td.download{background-color:rgba(226, 232, 232, 1);}
 
 /*--------Header row colors -------*/
-.table th{color: white; font-weight: normal; font-size: 17px;} 
+.table th{color: white; font-weight: normal; font-size: 17px;}
 .table th.view  { background-color: rgba(66, 65, 65, 0.9);}
 .table th.name  { background-color: rgba(66, 65, 65, 0.8);}
 .table th.company  { background-color: rgba(66, 65, 65, 0.9);}
@@ -210,7 +211,7 @@ textarea {
 }
 
 /*--------Animated background-------*/
-#particles-js{  
+#particles-js{
     height: 100%;
     width: 225px;
     position: fixed;
@@ -218,12 +219,12 @@ textarea {
     top: 0;
     left: 0;
     /*background: linear-gradient(180deg, rgb(101, 100, 238) 0%, rgba(112, 212, 216, 1) 100%);*/
-    background: linear-gradient(180deg, #90A8C3 0%, #64A6BD 100%); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: 50% 50%; 
+    background: linear-gradient(180deg, #90A8C3 0%, #64A6BD 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 
-} 
+}
 
 /*--------SIDEBAR navigation-------*/
 #sidenav #menu a {
@@ -275,7 +276,7 @@ textarea {
 }
 
 /*--------FOOTER-------*/
-#sidenav footer {
+footer {
     position: fixed;
     bottom: 0;
     height: 40px;
@@ -283,11 +284,13 @@ textarea {
     padding: 0px;
     vertical-align: bottom;
     background: rgba(255,255,255,0.75);
+    z-index: 20;
+    left: 0;
 
 }
 
 /*--------FOOTER Copyrights-------*/
-#sidenav #copy {
+footer #copy {
     margin-top: inherit;
     font-size: 12px;
     padding-top: 5px;
@@ -302,22 +305,21 @@ textarea {
 
 /*--------FOOTER Rights-------*/
 
-#sidenav footer #rights img {
+footer #rights img {
     width:40px;
     cursor: pointer;
 }
 
-#sidenav footer #rights {
+footer #rights {
     display: inline-block;
     position: relative;
-    float:right;
     right: 40px;
     margin-top: 10px;
     bottom:20px;
     padding-top: 10px;
 }
 
-#sidenav footer #rights #dropup {
+footer #rights #dropup {
     display: none;
     background-color: rgb(236, 122, 111);
     min-width: 160px;
@@ -329,32 +331,32 @@ textarea {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#sidenav footer #rights #dropup a {
+footer #rights #dropup a {
     color: white;
 }
 
-#sidenav footer #rights #dropup a:hover{
+footer #rights #dropup a:hover{
     color: #424141;
 }
 
-#sidenav footer #rights:hover #dropup{
+footer #rights:hover #dropup{
     display: block;
     transition: 0.5s;
 }
 
 /*--------FOOTER social medias-------*/
-#sidenav #social {
+footer #social {
     width:200px;
     position: absolute;
     padding-left: 40px;
     transition: 0.5s;
     padding-top:2px;
 }
-#sidenav footer img:hover {
+footer img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-#sidenav footer #social img {
+footer #social img {
     width:30px;
 }
 /*--------SIDEBAR Responsive-------*/
@@ -399,15 +401,16 @@ textarea {
    #sidenav {background: linear-gradient(180deg, #90A8C3 0%, #64A6BD 100%);;width: 60px; font-size: 18px; }
    #sidenav #menu { background-color:transparent;}
    #sidenav #menu #link img {margin-left:8px;}
-   #sidenav #social {padding-left: 0px; width: 100px;}
-   #sidenav footer #rights {right: 5px;}
+   footer #social {padding-left: 0px; width: 100px;}
+   footer #rights {right: 5px;}
+   footer #extra {display:none;}
+   footer #copy {padding-top: 8px; width:130px;}
    body { margin-left: 65px; }
    #sidenav img {transform: scale(0.8);}
    #sidenav #menu tr { height: 10px;}
    #sidenav #logo {display : none;}
    #sidenav #openNav {display : block;}
    #sidenav #extra {display:none;}
-   #sidenav #copy {padding-top: 8px; width:130px;}
    #sidenav td.logo {display: block;}
 }
 
@@ -416,8 +419,10 @@ textarea {
    #sidenav { background: linear-gradient(180deg, #90A8C3 0%, #64A6BD 100%);width: 60px; font-size: 18px; }
    #sidenav #menu { background-color:transparent;}
    #sidenav #menu #link img {margin-left:8px;}
-   #sidenav #social {padding-left: 0px; width: 100px;}
-   #sidenav footer #rights {right: 5px;}
+   footer #social {padding-left: 0px; width: 100px;}
+   footer #rights {right: 5px;}
+   footer #extra {display:none;}
+   footer #copy {padding-top: 8px; width:130px;}
    body { margin-left: 65px; }
    #sidenav img {transform: scale(0.8);}
    #sidenav #menu tr { height: 30px;}
@@ -425,7 +430,6 @@ textarea {
    #sidenav #logo {display : none;}
    #sidenav #openNav {display : block;}
    #sidenav #extra {display:none;}
-   #sidenav #copy {padding-top: 8px; width:130px;}
    #sidenav td.logo {display: block;}
 }
 
@@ -535,15 +539,15 @@ header p img{
 
 /****************-MODAL-***************/
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left:0;
     top: 0;
     padding-top: 200px;
-    width: 100%; 
+    width: 100%;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.7); 
+    background-color: rgba(0,0,0,0.7);
     -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
@@ -851,7 +855,7 @@ header p img{
 
 .home p {
     margin-left: 5px;
-    margin-right: 5px;  
+    margin-right: 5px;
 }
 #yser {
     width: 50%;
@@ -864,11 +868,14 @@ header p img{
 
 .home img {
     display: block;
-    width: 90px; 
+    width: 90px;
     margin-left: auto;
     margin-right: auto;
 }
 
+#data.home h2{
+  color:white;
+}
 #data.home img {
     width:80px;
     margin-bottom: 20px;
@@ -921,7 +928,7 @@ header p img{
     vertical-align: middle;
     height: 30px;
     border-radius: 10px;
-    padding-right: : 5px;
+    padding-right: 5px;
     padding-left: 5px;
     font-size: 16px;
     width: 200px;
@@ -933,7 +940,6 @@ header p img{
 .actions {
     position: relative;
     display: inline-block;
-    float: right;
 }
 
 .actions-content {
@@ -1026,7 +1032,7 @@ header p img{
 
 #img img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: contain;
 }
 
@@ -1128,7 +1134,7 @@ header p img{
     background-color: rgba(254, 203, 0, 0.7);
     height: 30px;
     border-radius: 50px;
-    padding-right: : 5px;
+    padding-right:5px;
     padding-left: 10px;
     padding-top: 5px;
     width: 250px;
@@ -1137,12 +1143,11 @@ header p img{
 
 #search img {
     width: 20px;
-    vertical-align: middle;
     display: block;
 }
 
 #search input[type="text"]{
-    border:none; 
+    border:none;
     font-size: 17px;
     background-color: inherit;
     width: 80%;
@@ -1198,7 +1203,7 @@ header p img{
 
 #companies #img img {
     width: inherit;
-    height: inherit; 
+    height: inherit;
     object-fit: contain;
 }
 
@@ -1268,7 +1273,7 @@ header p img{
     #companies .infos {width: 90%; height: 200px; min-width: 200px;}
     #search {width: 90%}
     #companies .infos h1 {transform: scale(0.9);}
-    h2 {text-align: transform: scale(0.9);}
+    h2 {transform: scale(0.9);}
     #companies.user .infos {width: 90%; height: 200px; min-width: 200px;}
     #companies.user .infos h1 {font-size: 25px; transform: scale(0.9);}
 
@@ -1290,7 +1295,7 @@ header p img{
 #companies_request p {
     width: 80%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 #companies_request form p {
@@ -1338,7 +1343,7 @@ header p img{
 
 #companies_request label input:checked ~ .radio {
     background-color: #2196F3;
-} 
+}
 
 #companies_request .radio:after {
     content: "";
@@ -1404,7 +1409,7 @@ header p img{
     background-color: rgb(236, 122, 111);
     height: 30px;
     border-radius: 10px;
-    padding-right: : 5px;
+    padding-right: 5px;
     padding-left: 5px;
     font-size: 16px;
     width: 150px;
@@ -1477,7 +1482,7 @@ header p img{
 
 /*-------DEMANDE TRAITEES------*/
 #user_companies_data #done {background-color:#428E64;}
-#user_companies_data #finished  {  
+#user_companies_data #finished  {
     background-color: rgba(233,92,77,0.21);
     padding-bottom: 30px;
 }
@@ -1494,7 +1499,7 @@ header p img{
 
 /*-------DEMANDE EN COURS------*/
 #user_companies_data #progress {background-color:#E74C3C;}
-#user_companies_data #in_progress  {  
+#user_companies_data #in_progress  {
     background-color: rgba(90,195,137,0.21);
     padding-bottom: 30px;
 }
@@ -1522,7 +1527,7 @@ header p img{
 #user_requests {
     width: 100%;
     background: linear-gradient(180deg, #B0C0BC -40%, white 10%);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border: none;
 }

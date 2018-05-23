@@ -7,7 +7,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--*************-NAVIGATION-*************-->
 
@@ -25,7 +25,7 @@
       <span id="closeNav"   onclick="closeNav()">&times;</span></td>
       <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
     </tr>
-    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+    <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -46,12 +46,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--***********-FOOTER-**********-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -69,15 +69,15 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
+
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
 <header>
   <div>
-    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button ><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
-    <button id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><img src="public/images/company.png">Les entreprises qui collaborent avec nous</h1>
     <p>Ces entreprises ont fait le choix de la transparence en acceptant de passer par yser pour redonner aux utilisateurs le contr&ocirc;le sur leurs donne&eacute;s personnelles. Retrouve-ici la liste compl&egrave;te des entreprises qui colaborent avec nous, ainsi que des informations sur leur politique de protection des donn&eacute;es.</p>
@@ -87,7 +87,7 @@
 
 <!--*******************************************-MAIN-*******************************************-->
 <div id= "main">
-  
+
   <!--Search Form-->
   <div id="search">
     <form action="">
@@ -95,9 +95,9 @@
       <button type="submit"><img src="public/images/search.png"></button>
     </form>
   </div>
-  
+
   <br/>
-  
+
 
   <!--Companies used by the user-->
   <h2>Les entreprise d&eacute;j&agrave; en interaction avec vous</h2>
@@ -207,4 +207,4 @@ for (var i = 0; i < company.length; i++)
 }
 </script>
 
-</html> 
+</html>

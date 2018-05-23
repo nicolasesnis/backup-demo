@@ -7,7 +7,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--*************-NAVIGATION-*************-->
 
@@ -26,7 +26,7 @@
       <span id="closeNav"   onclick="closeNav()">&times;</span></td>
       <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
     </tr>
-    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+    <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -47,12 +47,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--***********-FOOTER-**********-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -70,15 +70,15 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
+
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
 <header>
   <div>
-    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
-    <button  id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><a href="User_data_modify.html">&#8592;</a>&emsp;Demande de rectification: Mgen - (&Eacute;tape 2/2)</h1>
     <p>Tu n&rsquo;as r&eacute;cup&eacute;r&eacute; aucune donn&eacute;e chez cette entreprise au cours de 15 derniers jours. Tu peux si tu le souhaites exercer ton droit d&rsquo;acc&egrave;s aupr&egrave;s de cette entreprise au pr&eacute;alable avant de demander une rectification.</p>
@@ -119,4 +119,4 @@
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script  src="public/js/background.js"></script>
 
-</html> 
+</html>

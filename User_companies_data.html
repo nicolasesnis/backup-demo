@@ -7,7 +7,7 @@
 
 <head/>
 
-<body onresize="responsive()">   
+<body onresize="responsive()">
 
 <!--*************-NAVIGATION-*************-->
 
@@ -26,7 +26,7 @@
       <span id="closeNav"   onclick="closeNav()">&times;</span></td>
       <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
     </tr>
-    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+    <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
       <td>Mes DONN&Eacute;ES</td>
     </tr>
@@ -47,12 +47,12 @@
       <td>COMMENT &Ccedil;A MARCHE</td>
     </tr>
   </table>
-
+</nav>
   <!--***********-FOOTER-**********-->
   <footer>
     <!--Link to Social Medias-->
     <table id="social">
-      <tr> 
+      <tr>
         <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
         <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
         <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
@@ -70,15 +70,14 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
-</nav>
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
 <header>
   <div>
-    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
     <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
-    <button  id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><a href="User_companies.html">&#8592;</a>&emsp;Mes donn&eacute;es r&eacute;cup&eacute;r&eacute;es: BNP Paribas</h1>
     <p><img src="public/images/check.png"> Tu as d&eacute;j&agrave; interagis avec cette entreprise</p>
@@ -99,7 +98,7 @@
       De mani&egrave;re g&eacute;n&eacute;rale, il y a deux cat&eacute;gories d&rsquo;informations que nous collectons: 1) les informations que nous devons avoir afin de vous permettre d&rsquo;utiliser le service Spotify; et 2) les informations que nous pouvons utiliser afin de vous fournir des fonctionnalit&eacute;s additionnelles et une exp&eacute;rience am&eacute;lior&eacute;e, &agrave; la condition que vous choisissiez de partager ces informations.</p>
     </div>
   </div>
-  
+
   <p>Voici les donn&eacute;es que tu as r&eacute;cup&eacute;r&eacute;es chez : BNP Paribas</p>
   <button class="switch" id="done" onclick="showProgress()">Demandes en cours</button>
   <button class="switch" id="progress" onclick="showDone()">Demandes trait&eacute;es</button>
@@ -205,7 +204,7 @@
      <a href=""><img src="public/images/question.png"><p>En savoir plus</p></a>
   </div>
 
-  </div>  
+  </div>
 </div>
 <!--*******************************************MAIN END**************************************-->
 </body>
@@ -223,4 +222,4 @@
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script  src="public/js/background.js"></script>
 
-</html> 
+</html>
