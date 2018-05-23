@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<head/>
+
+<body onresize="responsive()">   
+
+<!--*************-NAVIGATION-*************-->
+
+<!--***********-SIDEBAR-**********-->
+<div id="particles-js"></div>
+ <nav id="sidenav">
+  <!--Link Menu-->
+  <table id ="menu">
+    <tr id ="logo" onclick="document.location = 'index.html'">
+      <td colspan="2"><img src="public/images/yser.png"></td>
+    </tr>
+    <!--For Mobile (open and close sidebar buttons)-->
+    <tr>
+      <td ><span id="openNav"  onclick="openNav()">&#9776;</span>
+      <span id="closeNav"   onclick="closeNav()">&times;</span></td>
+      <td class="logo" onclick="document.location = 'index.html'"><img src="public/images/yser.png"></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'data.html'"> 
+      <td><img src = "public/images/data.png"></td>
+      <td>Mes DONN&Eacute;ES</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'hub.html'">
+      <td><img src = "public/images/hub.png"></td>
+      <td>PERMISSION HUB</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'companies.html'">
+      <td id = "icon"><img src = "public/images/company.png"></td>
+      <td>LES ENTREPRISES <span id="extra"><br/>qui collaborent avec nous</span></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'law.html'">
+      <td><img src = "public/images/law.png"></td>
+      <td>Mes DROITS</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'help.html'">
+      <td><img src = "public/images/help.png"></td>
+      <td>COMMENT &Ccedil;A MARCHE</td>
+    </tr>
+  </table>
+
+  <!--***********-FOOTER-**********-->
+  <footer>
+    <!--Link to Social Medias-->
+    <table id="social">
+      <tr> 
+        <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
+        <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
+        <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
+      </tr>
+    </table>
+    <!--Link to Rights-->
+    <div id ="rights">
+      <img src="public/images/rights.png" onmouseover="this.src='public/images/rights_hover.png'" onmouseout="this.src='public/images/rights.png'">
+      <div id="dropup">
+        <a href="#">Conditions G&eacute;n&eacute;rales</a>
+        <hr style="width:100%; background-color:white; border:none; height:1px">
+        <a href="#">Politique de protection<br/>des donn&eacute;es de yser</a>
+      </div>
+    </div>
+    <!--Copyrights text-->
+    <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
+  </footer>
+</nav>
+<!--**********************-NAVIGATION END-*****************-->
+
+<!--*********************-HEADER-**** **********************-->
+<header>
+  <div>
+    <button style="display: none" onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button id="sign_in" class="log" >S'identifier</button>
+    <button style="display: none" id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <br/>
+    <h1><img src="public/images/data.png">Mes donn&eacutees</h1>
+    <p>C&#39;est ici qu&#39;apparaissent les donn&eacute;es que tu r&eacute;p&egrave;res des entreprises. Ces donn&eacute;es sont disponibles ici 15 jours, apr&egrave;s quoi nous les effa&ccedil;ons de nos bases de donn&eacute;es.</p>
+  </div>
+</header>
+<!--**********************-Header END-**********************-->
+
+<!--*********************-MAIN-******************************-->
+<div id= "main">
+
+<!--Sign in modal-->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div id="modal-content">
+    <div id="modal-signin" class="modal-log">
+      <h1>Connectez-vous &agrave; votre compte</h1>
+      <br/>
+      <form action="" method="post">
+          <input type="text" name="login" placeholder="Adresse email">
+          <input type="password" name="passwd" placeholder="Mot de passe">
+          <input type="submit" name="submit" value="CONNEXION">
+          <br/>
+          <p id="passwd" onclick="showPasswd()">Mot de passe oubli&eacute ?</p>
+          <div id="get_passwd">
+            <hr>
+            <p>Veuillez indiquer votre adresse email, nous vous enverrons un email afin de réinitialiser votre mot de passe.</p>
+            <input type="text" name="login" placeholder="Adresse email">
+            <input type="submit" name="submit" value="VALIDER">
+          </div>
+      </form>
+      <hr>
+      <p>Pas encore inscrit chez Yser ?</p>
+      <button id="user_create" >CR&Eacute;ER UN COMPTE</button>
+    </div>
+
+    <div id="modal-subscribe" class="modal-log">
+      <h1>Cr&eacute;ez votre compte Yser</h1>
+      <br/>
+      <form action="" method="post">
+          <input type="text" name="login" placeholder="Adresse email">
+          <input type="password" name="passwd" placeholder="Mot de passe">
+          <input type="password" name="conf_passwd" placeholder="Confirmation du mot de passe">
+          <br/>
+          <p style="margin-left: 15%;">T&eacute;l&eacute;chargez votre carte d&#39;identit&eacute; (optionel) 
+            <img id="up_Upload" onclick="hideUpload()" src="public/images/up.png" onmouseover="this.src='public/images/up_hover.png'" onmouseout="this.src='public/images/up.png'"/>
+            <img  id="down_Upload" onclick="showUpload()" src="public/images/down.png" onmouseover="this.src='public/images/down_hover.png'" onmouseout="this.src='public/images/down.png'"/>
+          </p>
+          <hr>
+          <div id="drag_drop">
+          <p> Glissez vos fichiers ici<span id="extra"><br/></span><img src="public/images/upload.png"></p>
+          <input type="file" accept="image/*" multiple>
+          </div>
+          <input type="submit" name="submit" value="VALIDER">
+          <br/>
+      </form>
+      <hr>
+      <p>D&eacute;j&agrave; inscrit ?</p>
+      <button id="user_connect" >SE CONNECTER</button>
+    </div>
+</div>
+
+</div>
+</div>
+<!--***********************MAIN END******************-->
+</body>
+
+<!-- Fixed Modal-->
+<script>
+  var sign_in = document.getElementById('modal-signin');
+  document.getElementById('myModal').style.display = "block";
+  sign_in.style.display = "block";
+</script>
+
+<!-- Responsive Sidebar-->
+<script src="public/js/sidenav.js"></script>
+
+<!-- Modal to sign up -->
+<script src="public/js/modal_subscribe.js"></script>
+
+<!-- Interactive background -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script  src="public/js/background.js"></script>
+
+</html> 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<head/>
+
+<body onresize="responsive()">   
+
+<!--*************-NAVIGATION-*************-->
+
+<!--***********-SIDEBAR-**********-->
+<div id="particles-js"></div>
+
+ <nav id="sidenav">
+  <!--Link Menu-->
+  <table id ="menu">
+    <tr id ="logo" onclick="document.location = 'User_home.html'">
+      <td colspan="2"><img src="public/images/yser.png"></td>
+    </tr>
+    <!--For Mobile (open and close sidebar buttons)-->
+    <tr>
+      <td ><span id="openNav"  onclick="openNav()">&#9776;</span>
+      <span id="closeNav"   onclick="closeNav()">&times;</span></td>
+      <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+      <td><img src = "public/images/data.png"></td>
+      <td>Mes DONN&Eacute;ES</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'hub.html'">
+      <td><img src = "public/images/hub.png"></td>
+      <td>PERMISSION HUB</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_companies.html'">
+      <td id = "icon"><img src = "public/images/company.png"></td>
+      <td>LES ENTREPRISES <span id="extra"><br/>qui collaborent avec nous</span></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'law.html'">
+      <td><img src = "public/images/law.png"></td>
+      <td>Mes DROITS</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'help.html'">
+      <td><img src = "public/images/help.png"></td>
+      <td>COMMENT &Ccedil;A MARCHE</td>
+    </tr>
+  </table>
+
+  <!--***********-FOOTER-**********-->
+  <footer>
+    <!--Link to Social Medias-->
+    <table id="social">
+      <tr> 
+        <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
+        <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
+        <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
+      </tr>
+    </table>
+    <!--Link to Rights-->
+    <div id ="rights">
+      <img src="public/images/rights.png" onmouseover="this.src='public/images/rights_hover.png'" onmouseout="this.src='public/images/rights.png'">
+      <div id="dropup">
+        <a href="#">Conditions G&eacute;n&eacute;rales</a>
+        <hr style="width:100%; background-color:white; border:none; height:1px">
+        <a href="#">Politique de protection<br/>des donn&eacute;es de yser</a>
+      </div>
+    </div>
+    <!--Copyrights text-->
+    <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
+  </footer>
+</nav>
+<!--**********************-NAVIGATION END-*****************-->
+
+<!--*********************-HEADER-**** **********************-->
+<header>
+  <div>
+    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
+    <button  id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <br/>
+    <h1><a href="User_data_modify.html">&#8592;</a>&emsp;Demande de rectification: Mgen - (&Eacute;tape 2/2)</h1>
+    <p>Tu n&rsquo;as r&eacute;cup&eacute;r&eacute; aucune donn&eacute;e chez cette entreprise au cours de 15 derniers jours. Tu peux si tu le souhaites exercer ton droit d&rsquo;acc&egrave;s aupr&egrave;s de cette entreprise au pr&eacute;alable avant de demander une rectification.</p>
+  </div>
+</header>
+<!--**********************-Header END-**********************-->
+
+<!--*******************************************-MAIN-*******************************************-->
+<div id= "main">
+
+  <!--Company header-->
+  <div id="data_modify" class="flexBox">
+    <div id="img"><img src="public/images/companies/mgen.png"></div>
+    <div id="p">
+    <p><span id="policy">Politique de confidendialit&eacute; des donn&eacute;es personnelles :</span>
+      Dans le cadre de l&rsquo;exploitation du SITE mgen.fr et de l&rsquo;ESPACE PERSONNEL, MGEN est susceptible de collecter des donn&eacute;es &agrave; caract&egrave;re personnel relatives aux UTILISATEURS DU SITE ET DE L&rsquo;ESPACE PERSONNEL. Ces donn&eacute;es sont trait&eacute;es conform&eacute;ment aux finalit&eacute;s pr&eacute;vues lors de la collecte.</p>
+    </div>
+  </div>
+  <div id="data_request_form">
+    <p>Indique ton num&eacute;ro client, num&eacute;ro de soci&eacute;taire, ou toute autre information dont l&rsquo;entreprise pourrait avoir besoin pour t&rsquo;identifier :</p>
+    <form action="" method="post" class="form">
+      <input type="text" name="login" placeholder="Ton identifiant client, num&eacute;ro de soci&eacute;taire, ...">
+      <p>Explique en quelque mots le motif de ta demande et pr&eacute;cise les documents sur lesquels tu souhaites op&eacute;rer des modifications :</p>
+      <textarea type="text" name="message" placeholder="Message pour l&#39;entreprise"></textarea>
+      <input type="submit" name="submit" value="ENVOYER">
+    </form>
+  </div>
+</div>
+<!--*******************************************MAIN END**************************************-->
+</body>
+
+<!--******************JS Scripts***************-->
+
+<!-- Responsive Sidebar -->
+<script src="public/js/sidenav.js"></script>
+
+<!-- Interactive background -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script  src="public/js/background.js"></script>
+
+</html> 

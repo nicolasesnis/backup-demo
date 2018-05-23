@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<head/>
+
+<body onresize="responsive()">   
+
+<!--*************-NAVIGATION-*************-->
+
+<!--***********-SIDEBAR-**********-->
+<div id="particles-js"></div>
+
+ <nav id="sidenav">
+  <!--Link Menu-->
+  <table id ="menu">
+    <tr id ="logo" onclick="document.location = 'User_home.html'">
+      <td colspan="2"><img src="public/images/yser.png"></td>
+    </tr>
+    <!--For Mobile (open and close sidebar buttons)-->
+    <tr>
+      <td ><span id="openNav"  onclick="openNav()">&#9776;</span>
+      <span id="closeNav"   onclick="closeNav()">&times;</span></td>
+      <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+      <td><img src = "public/images/data.png"></td>
+      <td>Mes DONN&Eacute;ES</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'hub.html'">
+      <td><img src = "public/images/hub.png"></td>
+      <td>PERMISSION HUB</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_companies.html'">
+      <td id = "icon"><img src = "public/images/company.png"></td>
+      <td>LES ENTREPRISES <span id="extra"><br/>qui collaborent avec nous</span></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'law.html'">
+      <td><img src = "public/images/law.png"></td>
+      <td>Mes DROITS</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'help.html'">
+      <td><img src = "public/images/help.png"></td>
+      <td>COMMENT &Ccedil;A MARCHE</td>
+    </tr>
+  </table>
+
+  <!--***********-FOOTER-**********-->
+  <footer>
+    <!--Link to Social Medias-->
+    <table id="social">
+      <tr> 
+        <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
+        <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
+        <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
+      </tr>
+    </table>
+    <!--Link to Rights-->
+    <div id ="rights">
+      <img src="public/images/rights.png" onmouseover="this.src='public/images/rights_hover.png'" onmouseout="this.src='public/images/rights.png'">
+      <div id="dropup">
+        <a href="#">Conditions G&eacute;n&eacute;rales</a>
+        <hr style="width:100%; background-color:white; border:none; height:1px">
+        <a href="#">Politique de protection<br/>des donn&eacute;es de yser</a>
+      </div>
+    </div>
+    <!--Copyrights text-->
+    <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
+  </footer>
+</nav>
+<!--**********************-NAVIGATION END-*****************-->
+
+<!--*********************-HEADER-**** **********************-->
+<header>
+  <div>
+    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
+    <button  id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <br/>
+    <h1><a href="User_data.html">&#8592;</a>&emsp;Demander l&#39;oubli de donn&eacute;es personnelles - (&Eacute;tape 1/2)</h1>
+    <p>Commence par s&eacute;lectionner l&rsquo;entreprise qui d&eacute;tient des donn&eacute;es &agrave; ton sujet et aupr&egrave;s de laquelle tu souhaites exercer ton droit &agrave; l&rsquo;oubli.</p>
+  </div>
+</header>
+<!--**********************-Header END-**********************-->
+
+<!--*******************************************-MAIN-*******************************************-->
+<div id= "main">
+
+  <!--Search Form-->
+  <div id="search">
+    <form action="">
+      <input type="text" placeholder="Chercher une entreprise" name="search">
+      <button type="submit"><img src="public/images/search.png"></button>
+    </form>
+  </div>
+
+  <div id="specification">
+  <img src="public/images/question.png"><p>Les entreprises dans la liste ci-contre sont nos partenaires, elles ont d&eacute;j&agrave; travaill&eacute; avec yser et pourront acc&eacute;der &agrave; ta demande rapidement. Tu ne trouves pas l'entreprise qui t&rsquo;int&eacute;resse ? Clique <a href="User_companies_request.html">ici</a> pour faire valoir tes droits aupr&egrave;s d'une autre entreprise. Nous la contacterons et lui proposons de te r&eacute;pondre via yser.</p>
+  </div>
+
+  <br/>
+
+  <div id="companies">
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/oui.jpg"/></div>
+      <hr>
+      <h1>Oui SCNF</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/lydia.jpg"/></div>
+      <hr>
+      <h1>Lydia</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/bnp.png"/></div>
+      <hr>
+      <h1>bnp paribas</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/spotify.png"/></div>
+      <hr>
+      <h1>Spotify</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/decathlon.jpg"/></div>
+      <hr>
+      <h1>Decathlon</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/mgen.png"/></div>
+      <hr>
+      <h1>mgen</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/fnac.png "/></div>
+      <hr>
+      <h1>Fnac</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/zara.png"/></div>
+      <hr>
+      <h1>Zara</h1>
+    </div>
+    <div class="infos">
+      <div id="img"><img src="public/images/companies/lemonde.jpg"/></div>
+      <hr>
+      <h1>Le Monde</h1>
+    </div>
+  </div>
+  
+</div>
+<!--*******************************************MAIN END**************************************-->
+</body>
+
+<!--******************JS Scripts***************-->
+
+<!-- Responsive Sidebar -->
+<script src="public/js/sidenav.js"></script>
+
+<!-- Interactive background -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script  src="public/js/background.js"></script>
+
+<!-- onclick companies Not to be included in final draft -->
+<script>
+
+var company = document.getElementsByClassName("infos");
+
+for (var i = 0; i < company.length; i++)
+{
+    company[i].onclick = function() {
+        document.location = 'User_data_modify_2.html';
+    }
+}
+</script>
+</html> 

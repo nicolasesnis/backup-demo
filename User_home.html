@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<head/>
+
+<body onresize="responsive()">   
+
+<!--*************-NAVIGATION-*************-->
+
+<!--***********-SIDEBAR-**********-->
+<div id="particles-js"></div>
+ <nav id="sidenav">
+  <!--Link Menu-->
+  <table id ="menu">
+    <tr id ="logo" onclick="document.location = 'User_home.html'">
+      <td colspan="2"><img src="public/images/yser.png"></td>
+    </tr>
+    <!--For Mobile (open and close sidebar buttons)-->
+    <tr>
+      <td ><span id="openNav"  onclick="openNav()">&#9776;</span>
+      <span id="closeNav"   onclick="closeNav()">&times;</span></td>
+      <td class="logo" onclick="document.location = 'User_home.html'"><img src="public/images/yser.png"></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_data.html'"> 
+      <td><img src = "public/images/data.png"></td>
+      <td>Mes DONN&Eacute;ES</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'hub.html'">
+      <td><img src = "public/images/hub.png"></td>
+      <td>PERMISSION HUB</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'User_companies.html'">
+      <td id = "icon"><img src = "public/images/company.png"></td>
+      <td>LES ENTREPRISES <span id="extra"><br/>qui collaborent avec nous</span></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'law.html'">
+      <td><img src = "public/images/law.png"></td>
+      <td>Mes DROITS</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'help.html'">
+      <td><img src = "public/images/help.png"></td>
+      <td>COMMENT &Ccedil;A MARCHE</td>
+    </tr>
+  </table>
+
+  <!--***********-FOOTER-**********-->
+  <footer>
+    <!--Link to Social Medias-->
+    <table id="social">
+      <tr> 
+        <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
+        <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
+        <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
+      </tr>
+    </table>
+    <!--Link to Rights-->
+    <div id ="rights">
+      <img src="public/images/rights.png" onmouseover="this.src='public/images/rights_hover.png'" onmouseout="this.src='public/images/rights.png'">
+      <div id="dropup">
+        <a href="#">Conditions G&eacute;n&eacute;rales</a>
+        <hr style="width:100%; background-color:white; border:none; height:1px">
+        <a href="#">Politique de protection<br/>des donn&eacute;es de yser</a>
+      </div>
+    </div>
+    <!--Copyrights text-->
+    <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
+  </footer>
+</nav>
+<!--**********************-NAVIGATION END-*****************-->
+
+<!--*********************-HEADER-**** **********************-->
+<header>
+  <div>
+    <button onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button id="sign_in" class="log" style="display: none" >S'identifier</button>
+    <button id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <br/>
+    <h1>Salut Alexandre !</h1>
+    <p>Bienvenue sur yser, la plateforme qui permet de r&eacute;cup&eacute;rer et de contr&ocirc;ler tes donn&eacute;es personnelles</p>
+  </div>
+</header>
+<!--**********************-Header END-**********************-->
+
+<!--*********************-MAIN-******************************-->
+<div id= "main" class="flexBox">
+
+  <div id="yser" class="home">
+    <img src="public/images/yser.png"/>
+    <h1>YSER : QUI SOMMES NOUS ?</h1>
+    <p>yser a pour vocation d&#39;aider les particuliers  &agrave; exercer leur droit  &agrave; la protection des donn&eacute;es personnelles et   &agrave; garder une vision claire de la gestion et du traitement de ces donn&eacute;es. Les entreprises qui offrent cette transparence au travers de yser se conforment   &agrave; la nouvelle r&eacute;glementation tout en construisant un lien de confiance b&eacute;n&eacute;fique avec leurs clients.
+    <p/>
+    <p>yser se veut &ecirc;tre   &agrave; l&#39;initiative de cet &eacute;cosyst&egrave;me en facilitant les &eacute;changes entre les titulaires de droits et les responsables du traitement des donn&eacute;es.<p/>
+    <p>En savoir plus</p>
+  </div>
+
+  <div id="data" class="home">
+    <img src="public/images/data.png" style="float: left; margin-right: 20px;"/>
+    <h2>Mes Donn&eacute;es</h2>
+    <p>C&#39;est ici que sont stock&eacute;es toutes les donn&eacute;es que tu r&eacute;cup&egrave;res aupr&egrave;s d&#39;entreprises, ainsi que tes autres donn&eacute;es personnelles.</p>
+    <hr>
+    <img src="public/images/hub.png" style="float: right ;margin-left: 20px;"/>
+    <h2>Permission Hub</h2>
+    <p>Depuis le Hub, tu contr&ocirc;les qui peut avoir acc&egrave;s aux donn&eacute;es de ton coffre-fort. Choisis les entreprises qui peuvent acc&eacute;der &agrave; tes donn&eacute;es.</p>
+  </div>
+
+  <div id="law" class="home">
+    <img src="public/images/law.png"/>
+    <h1>DONN&Eacute;ES PERSONNELLES :</br> QUELS SONT MES DROITS ?</h1>
+    <p>En tant que citoyen Europ&eacute;en, tu as des droits sur les donn&eacute;es personnelles que tu confies chaque jour aux entreprises, et yser est l&agrave; pour t&#39;aider &agrave; les exercer. Le RGPD (R&eacute;glement Europ&eacute;en sur la Protection des Donn&eacute;es, mai 2018), te conf&egrave;re les droits suivants sur tes donn&eacute;es personnelles : 
+    <br/>- Droit &agrave; l&#39;acc&egrave;s
+    <br/>- Droit &agrave; l&#39;oubli 
+    <br/>- Droit &agrave; la rectification
+    <br/>- Droit &agrave; la portabilit&eacute;</p>
+    <p>En savoir plus</p>
+  </div>
+  <div id="company" class="home">
+    <h1>CES ENTREPRISES QUI ONT FAIT <br/> LE PARI DE LA TRANSPARENCE</h1>
+    <img src="public/images/company.png"/>
+    <p>Nous collaborons avec des entreprises qui ont pris le tournant de la transparence.</p>
+    <p>Le d&eacute;veloppement de nouveaux droits conf&eacute;r&eacute;s &agrave; l&#39;individu sur ses donn&eacute;es doit &ecirc;tre l&#39;occasion d&#39;instaurer une relation de confiance entre services et utilisateurs plut&ocirc;t que de faire na&icirc;tre entre eux un rapport de d&eacute;fiance. L&#39;heure est &agrave; l&#39;&eacute;mergence d&#39;une telle collaboration plut&ocirc;t qu&#39;&agrave; la d&eacute;fense aveugle d&#39;une politique de r&eacute;tention des donn&eacute;es personnelles.</p>
+    </p>Voir la liste compl&egrave;te des entreprises</p> 
+  </div>
+</div>
+<!--***********************MAIN END******************-->
+</body>
+
+<script src="public/js/sidenav.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script  src="public/js/background.js"></script>
+
+</html> 

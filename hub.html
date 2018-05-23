@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<head/>
+
+<body onresize="responsive()">   
+
+<!--*************-NAVIGATION-*************-->
+
+<!--***********-SIDEBAR-**********-->
+<div id="particles-js"></div>
+ <nav id="sidenav">
+  <!--Link Menu-->
+  <table id ="menu">
+    <tr id ="logo" onclick="document.location = 'index.html'">
+      <td colspan="2"><img src="public/images/yser.png"></td>
+    </tr>
+    <!--For Mobile (open and close sidebar buttons)-->
+    <tr>
+      <td ><span id="openNav"  onclick="openNav()">&#9776;</span>
+      <span id="closeNav"   onclick="closeNav()">&times;</span></td>
+      <td class="logo" onclick="document.location = 'index.html'"><img src="public/images/yser.png"></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'data.html'"> 
+      <td><img src = "public/images/data.png"></td>
+      <td>Mes DONN&Eacute;ES</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'hub.html'">
+      <td><img src = "public/images/hub.png"></td>
+      <td>PERMISSION HUB</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'companies.html'">
+      <td id = "icon"><img src = "public/images/company.png"></td>
+      <td>LES ENTREPRISES <span id="extra"><br/>qui collaborent avec nous</span></td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'law.html'">
+      <td><img src = "public/images/law.png"></td>
+      <td>Mes DROITS</td>
+    </tr>
+    <tr id = "link" onclick="document.location = 'help.html'">
+      <td><img src = "public/images/help.png"></td>
+      <td>COMMENT &Ccedil;A MARCHE</td>
+    </tr>
+  </table>
+
+  <!--***********-FOOTER-**********-->
+  <footer>
+    <!--Link to Social Medias-->
+    <table id="social">
+      <tr> 
+        <td ><a target="_blank" href='https://fr.linkedin.com/company/yser'><img src="public/images/linkedin.png" onmouseover="this.src='public/images/linkedin_hover.png'" onmouseout="this.src='public/images/linkedin.png'"></td>
+        <td><a target="_blank" href='https://twitter.com/be_yser'><img src="public/images/twitter.png" onmouseover="this.src='public/images/twitter_hover.png'" onmouseout="this.src='public/images/twitter.png'"></a></td>
+        <td ><a target="_blank" href='https://www.facebook.com/yser.official/'><img src="public/images/facebook.png" onmouseover="this.src='public/images/facebook_hover.png'" onmouseout="this.src='public/images/facebook.png'"></a></td>
+      </tr>
+    </table>
+    <!--Link to Rights-->
+    <div id ="rights">
+      <img src="public/images/rights.png" onmouseover="this.src='public/images/rights_hover.png'" onmouseout="this.src='public/images/rights.png'">
+      <div id="dropup">
+        <a href="#">Conditions G&eacute;n&eacute;rales</a>
+        <hr style="width:100%; background-color:white; border:none; height:1px">
+        <a href="#">Politique de protection<br/>des donn&eacute;es de yser</a>
+      </div>
+    </div>
+    <!--Copyrights text-->
+    <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
+  </footer>
+</nav>
+<!--**********************-NAVIGATION END-*****************-->
+
+<!--*********************-HEADER-**** **********************-->
+<header>
+  <div>
+    <button style="display: none" onclick="document.location = 'index.html'"><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
+    <button id="sign_in" class="log" >S'identifier</button>
+    <button style="display: none" id="sign_out" class="log">Se d&eacute;connecter</button> 
+    <br/>
+    <h1><img src="public/images/hub.png">Permission hub</h1>
+    <p></p>
+  </div>
+</header>
+<!--**********************-Header END-**********************-->
+
+<!--*********************-MAIN-******************************-->
+<div id= "main">
+
+<!--Under construction Modal-->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div id="modal-content">
+    <div class="modal-pending">
+      <img src="public/images/construction.png"><h1>Page en cours de construction</h1>
+    </div>
+</div>
+
+</div>
+</div>
+<!--***********************MAIN END******************-->
+</body>
+
+<script>document.getElementById('myModal').style.display = "block";</script>
+<script src="public/js/sidenav.js"></script>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script  src="public/js/background.js"></script>
+
+</html> 
