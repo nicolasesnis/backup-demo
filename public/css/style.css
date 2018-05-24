@@ -13,7 +13,7 @@ body {
     margin-top :0;
     margin-right: 0;
     overflow-x: hidden;
-    background-color: #F7F7FF;
+    background-color: rgb(233, 235, 238, 0.3);
 }
 
 a {
@@ -135,6 +135,10 @@ textarea {
     border-collapse: collapse;
 }
 
+.table tr {
+    cursor: pointer;
+}
+
 .table th {
     text-align: left;
 }
@@ -149,13 +153,13 @@ textarea {
     padding-left: 0;
 }
 
-.table tr.even:hover {
-    transform: scale(1.01);
+.table tr:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
 }
-.table tr.odd:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+.table th:hover {
+    background-color: rgba(0,0,0,0.);
 }
 
 .table img {vertical-align: middle;}
@@ -173,18 +177,18 @@ textarea {
 .table tr:nth-child(odd) { height: 40px; }
 
 /*--------Even row colors-------*/
-.table tr:nth-child(even) td.name {background-color:rgba(212, 221, 220, 0.9);}
-.table tr:nth-child(even) td.date {background-color:rgba(212, 221, 220, 0.9);}
-.table tr:nth-child(even) td.view {background-color:rgba(212, 221, 220, 1);}
-.table tr:nth-child(even) td.company {background-color:rgba(212, 221, 220, 1);}
-.table tr:nth-child(even) td.download{background-color:rgba(212, 221, 220, 1);}
+.table tr:nth-child(even) td.name {background-color:rgba(212, 221, 220, 0.8);}
+.table tr:nth-child(even) td.date {background-color:rgba(212, 221, 220, 0.8);}
+.table tr:nth-child(even) td.view {background-color:rgba(212, 221, 220, 0.9);}
+.table tr:nth-child(even) td.company {background-color:rgba(212, 221, 220, 0.9);}
+.table tr:nth-child(even) td.download{background-color:rgba(212, 221, 220, 0.9);}
 /*--------Odd row colors-------*/
 
-.table tr:nth-child(odd) td.name {background-color:rgba(226, 232, 232, 0.9);}
-.table tr:nth-child(odd) td.date {background-color:rgba(226, 232, 232, 0.9);}
-.table tr:nth-child(odd) td.view {background-color:rgba(226, 232, 232, 1);}
-.table tr:nth-child(odd) td.company {background-color:rgba(226, 232, 232, 1);}
-.table tr:nth-child(odd) td.download{background-color:rgba(226, 232, 232, 1);}
+.table tr:nth-child(odd) td.name {background-color:rgba(226, 232, 232, 0.8);}
+.table tr:nth-child(odd) td.date {background-color:rgba(226, 232, 232, 0.8);}
+.table tr:nth-child(odd) td.view {background-color:rgba(226, 232, 232, 0.9);}
+.table tr:nth-child(odd) td.company {background-color:rgba(226, 232, 232, 0.9);}
+.table tr:nth-child(odd) td.download{background-color:rgba(226, 232, 232, 0.9);}
 
 /*--------Header row colors -------*/
 .table th{color: white; font-weight: normal; font-size: 17px;}
@@ -317,6 +321,7 @@ footer #rights {
     margin-top: 10px;
     bottom:20px;
     padding-top: 10px;
+    float: right;
 }
 
 footer #rights #dropup {
@@ -754,7 +759,7 @@ header p img{
 #drag_drop{
   border: 2px dashed #ec7a6f;
   width: 60%;
-  height: 80px;
+  height: 90px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -940,6 +945,8 @@ header p img{
 .actions {
     position: relative;
     display: inline-block;
+    float: right;
+
 }
 
 .actions-content {
@@ -1138,6 +1145,7 @@ header p img{
     padding-left: 10px;
     padding-top: 5px;
     width: 250px;
+    margin-bottom: 15px;
 
 }
 
@@ -1241,6 +1249,7 @@ header p img{
     align-content: stretch;
     background-color: #F7FCFF;
     justify-content: normal;
+    min-height: 50px;
 }
 
 #companies.user .infos {
@@ -1412,7 +1421,7 @@ header p img{
     padding-right: 5px;
     padding-left: 5px;
     font-size: 16px;
-    width: 150px;
+    width: 180px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -1524,37 +1533,32 @@ header p img{
 
 /****************-USER REQUESTS-***************/
 
-#user_requests {
+#requests {
     width: 100%;
     background: linear-gradient(180deg, #B0C0BC -40%, white 10%);
     margin-bottom: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border: none;
+    clear: both;
 }
 
-#user_requests #img {
+#requests #img {
     height: 80px;
     background-color: rgba(255,255,255,0);
     width: 100%;
 }
 
-#user_requests .table {
+#requests .table {
     overflow-x: auto;
 }
 
-#user_requests .table table{
+#requests .table table{
     border-collapse: collapse;
     min-width: 400px;
     margin:0;
     overflow-x: auto;
-    width: inherit;
+    width: 100%;
 }
-
-#user_requests th.view  { background-color: rgba(90,195,137,0.9)}
-#user_requests th.name  { background-color: rgba(90,195,137, 0.75);}
-#user_requests th.company  { background-color: rgba(90,195,137, 0.9);}
-#user_requests th.date  { background-color: rgba(90,195,137, 0.75);}
-#user_requests th.download  { background-color: rgba(90,195,137, 0.9);}
 
 
 /****************-USER REQUESTS END-***************/
@@ -1591,7 +1595,187 @@ header p img{
 /****************-LAW END-***************/
 
 
+/****************-DPO REQUESTS-***************/
 
+#dpo_requests_progress #requests {
+    margin-bottom: 30px;
+}
+
+.dpo .table th.view {width: 7%;text-align: center; background-color: pink;}
+.dpo .table th.name {width: 20%;}
+.dpo .table th.type {width: 20%;}
+.dpo .table th.company {width: 15%;}
+.dpo .table th.date_request {width: 15%;}
+.dpo .table th.date_modification {width: 15%;}
+.dpo .table th.download {width: 8%; text-align: center;}
+
+
+.dpo #in_progress th.view {background-color:rgba(90,195,137,0.9);}
+.dpo #in_progress th.name {background-color:rgba(90,195,137, 0.75);}
+.dpo #in_progress th.type {background-color:rgba(90,195,137,0.9);}
+.dpo #in_progress th.company {background-color:rgba(90,195,137, 0.75);}
+.dpo #in_progress th.date_request {background-color:rgba(90,195,137,0.9);}
+.dpo #in_progress th.date_modification {background-color:rgba(90,195,137, 0.75);}
+.dpo #in_progress th.download {background-color:rgba(90,195,137,0.9);}
+
+
+.dpo .table tr:nth-child(even) td.view {background-color:rgba(212, 221, 220, 0.9);}
+.dpo .table tr:nth-child(even) td.name {background-color:rgba(212, 221, 220, 0.8);}
+.dpo .table tr:nth-child(even) td.type {background-color:rgba(212, 221, 220, 0.9);}
+.dpo .table tr:nth-child(even) td.company {background-color:rgba(212, 221, 220, 0.8);}
+.dpo .table tr:nth-child(even) td.date_request {background-color:rgba(212, 221, 220, 0.9);}
+.dpo .table tr:nth-child(even) td.date_modification {background-color:rgba(212, 221, 220, 0.8);}
+.dpo .table tr:nth-child(even) td.download {background-color:rgba(212, 221, 220, 0.9);}
+
+
+.dpo .table tr:nth-child(odd) td.view {background-color:rgba(226, 232, 232, 0.9);}
+.dpo .table tr:nth-child(odd) td.name {background-color:rgba(226, 232, 232, 0.8);}
+.dpo .table tr:nth-child(odd) td.type {background-color:rgba(226, 232, 232, 0.9);}
+.dpo .table tr:nth-child(odd) td.company {background-color:rgba(226, 232, 232, 0.8);}
+.dpo .table tr:nth-child(odd) td.date_request {background-color:rgba(226, 232, 232, 0.9);}
+.dpo .table tr:nth-child(odd) td.date_modification {background-color:rgba(226, 232, 232, 0.8);}
+.dpo .table tr:nth-child(odd) td.download {background-color:rgba(226, 232, 232, 0.9);}
+
+
+
+#dpo_done {background-color:#428E64;}
+#dpo_finished  {  
+    background-color: rgba(233,92,77,0.21);
+    padding-bottom: 30px;
+}
+
+#dpo_finished {display: none;}
+#dpo_done {display: none;}
+
+/****************-DPO REQUESTS END-***************/
+
+/****************-DPO USER REQUESTS -***************/
+
+
+/*--------INFORMATIONS CLIENT/ INFPRMATIONS DE LA DEMANDE-------*/
+#infos_client{
+    background: linear-gradient(180deg, white 0%, #B0C0BC 180%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 50%;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    min-width: 150px;
+    overflow-x: auto;
+
+}
+
+#infos_client table  {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#infos_client table td.type img {
+    width: 30px;
+    cursor: pointer;
+}
+
+#infos_client table td.type {
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    color : #717C89;
+}
+
+#infos_client img {
+    width: 70%;
+    object-fit: cover;
+    margin-left: 15%;
+}
+
+
+/*--------MESSAGES BOX-------*/
+
+#chat {
+    width: 40%;
+    float: right;
+    border: 3px solid #EE887E;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-height: 250px;
+    min-width: 150px;
+    overflow-x: auto;
+}
+
+#chat .head{
+    width: 100%;
+    background-color: #EE887E;
+    color: white;
+    top: 0;
+}
+
+#chat h1 {
+    margin: 0;
+    font-size: 22px; 
+    font-weight: normal; 
+}
+
+#chat h3 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 13px; 
+    font-weight: normal; 
+    color : #717C89;
+}
+
+#chat p {
+    margin-left: 5px;
+    padding: 5px;
+    background-color:#E1E6E8;
+    width: 70px;
+    border-radius: 15px;
+}
+
+#chat #search {
+    margin-right: 5px;
+    float: right;
+    bottom: 0px;
+    margin-top: 100px;
+    margin-bottom: 5px; 
+    background-color: rgba(233,92,77,0.21);
+}
+
+/*--------DRAG AND DROP FILE-------*/
+#document {
+    float: right;
+    width: 40%;
+    margin-top:  40px;
+    text-align: center;
+}
+
+#document h1 {
+    font-size:22px;
+     color : #717C89;
+}
+
+
+#document img {width: 25px;}
+
+#document input {cursor: pointer;}
+
+#document input[type="submit"]{ width: 40%;}
+
+
+@media only screen and (max-width: 980px) {
+    #infos_client {width: 90%; float: initial;margin-right: auto; margin-left: auto;}
+    #chat {width: 90%; float: initial;margin-right: auto; margin-left: auto}
+    #chat #search {width: inherit;}
+    #document {width: 90%; float: initial; margin-right: auto; margin-left: auto}
+}
+
+@media only screen and (max-width: 1100px){
+    #document #extra  {display: block}
+}
+
+
+/****************-DPO USER REQUESTS END-***************/
 /****************-ANIMATIONS-***************/
 @keyframes slideTop {
     0% {

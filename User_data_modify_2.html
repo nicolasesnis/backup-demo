@@ -28,7 +28,7 @@
     </tr>
     <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
-      <td>Mes DONN&Eacute;ES</td>
+      <td>Mes DEMANDES</td>
     </tr>
     <tr id = "link" onclick="document.location = 'hub.html'">
       <td><img src = "public/images/hub.png"></td>
@@ -80,7 +80,7 @@
     <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
     <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
-    <h1><a href="User_data_modify.html">&#8592;</a>&emsp;Demande de rectification: Mgen - (&Eacute;tape 2/2)</h1>
+    <h1><a href="User_data_modify.html">&#8592;</a>&emsp;Demande d'acc&egrave;s: BNP </h1>
     <p>Tu n&rsquo;as r&eacute;cup&eacute;r&eacute; aucune donn&eacute;e chez cette entreprise au cours de 15 derniers jours. Tu peux si tu le souhaites exercer ton droit d&rsquo;acc&egrave;s aupr&egrave;s de cette entreprise au pr&eacute;alable avant de demander une rectification.</p>
   </div>
 </header>
@@ -91,15 +91,15 @@
 
   <!--Company header-->
   <div id="data_modify" class="flexBox">
-    <div id="img"><img src="public/images/companies/mgen.png"></div>
+    <div id="img"><img src="public/images/companies/bnp.png"></div>
     <div id="p">
     <p><span id="policy">Politique de confidendialit&eacute; des donn&eacute;es personnelles :</span>
-      Dans le cadre de l&rsquo;exploitation du SITE mgen.fr et de l&rsquo;ESPACE PERSONNEL, MGEN est susceptible de collecter des donn&eacute;es &agrave; caract&egrave;re personnel relatives aux UTILISATEURS DU SITE ET DE L&rsquo;ESPACE PERSONNEL. Ces donn&eacute;es sont trait&eacute;es conform&eacute;ment aux finalit&eacute;s pr&eacute;vues lors de la collecte.</p>
+      De mani&egrave;re g&eacute;n&eacute;rale, il y a deux cat&eacute;gories d&rsquo;informations que nous collectons: 1) les informations que nous devons avoir afin de vous permettre d&rsquo;utiliser les services BNP; et 2) les informations que nous pouvons utiliser afin de vous fournir des fonctionnalit&eacute;s additionnelles et une exp&eacute;rience am&eacute;lior&eacute;e, &agrave; la condition que vous choisissiez de partager ces informations.</p>
     </div>
   </div>
   <div id="data_request_form">
     <p>Indique ton num&eacute;ro client, num&eacute;ro de soci&eacute;taire, ou toute autre information dont l&rsquo;entreprise pourrait avoir besoin pour t&rsquo;identifier :</p>
-    <form action="" method="post" class="form">
+    <form action="User_home.html" method="post" class="form">
       <input type="text" name="login" placeholder="Ton identifiant client, num&eacute;ro de soci&eacute;taire, ...">
       <p>Explique en quelque mots le motif de ta demande et pr&eacute;cise les documents sur lesquels tu souhaites op&eacute;rer des modifications :</p>
       <textarea type="text" name="message" placeholder="Message pour l&#39;entreprise"></textarea>

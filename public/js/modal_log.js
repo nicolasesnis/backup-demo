@@ -33,6 +33,7 @@ document.getElementById('user_create').onclick = function() {
 }
 
 document.getElementById('user_connect').onclick = function() {
+	console.log("AOSDiAOSDIOASDI");
     modal.style.display = "block";
     sign_in.style.display = "block";
     subscribe.style.display = "none";

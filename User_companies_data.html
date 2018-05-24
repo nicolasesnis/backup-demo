@@ -28,7 +28,7 @@
     </tr>
     <tr id = "link" onclick="document.location = 'User_data.html'">
       <td><img src = "public/images/data.png"></td>
-      <td>Mes DONN&Eacute;ES</td>
+      <td>Mes DEMANDES</td>
     </tr>
     <tr id = "link" onclick="document.location = 'hub.html'">
       <td><img src = "public/images/hub.png"></td>
@@ -80,7 +80,7 @@
     <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
     <h1><a href="User_companies.html">&#8592;</a>&emsp;Mes donn&eacute;es r&eacute;cup&eacute;r&eacute;es: BNP Paribas</h1>
-    <p><img src="public/images/check.png"> Tu as d&eacute;j&agrave; interagis avec cette entreprise</p>
+    <!-- <p><img src="public/images/check.png"> Tu as d&eacute;j&agrave; interagis avec cette entreprise</p> -->
   </div>
 </header>
 <!--**********************-Header END-**********************-->
@@ -95,7 +95,7 @@
     <div id="img"><img src="public/images/companies/bnp.png"></div>
     <div id="p">
     <p><span id="policy">Politique de confidendialit&eacute; des donn&eacute;es personnelles :</span>
-      De mani&egrave;re g&eacute;n&eacute;rale, il y a deux cat&eacute;gories d&rsquo;informations que nous collectons: 1) les informations que nous devons avoir afin de vous permettre d&rsquo;utiliser le service Spotify; et 2) les informations que nous pouvons utiliser afin de vous fournir des fonctionnalit&eacute;s additionnelles et une exp&eacute;rience am&eacute;lior&eacute;e, &agrave; la condition que vous choisissiez de partager ces informations.</p>
+      De mani&egrave;re g&eacute;n&eacute;rale, il y a deux cat&eacute;gories d&rsquo;informations que nous collectons: 1) les informations que nous devons avoir afin de vous permettre d&rsquo;utiliser les services BNP; et 2) les informations que nous pouvons utiliser afin de vous fournir des fonctionnalit&eacute;s additionnelles et une exp&eacute;rience am&eacute;lior&eacute;e, &agrave; la condition que vous choisissiez de partager ces informations.</p>
     </div>
   </div>
 
@@ -105,7 +105,7 @@
   <div class="actions">
   <button class="actionsbtn">Exercer mes droits</button>
   <div class="actions-content">
-    <a href="User_data_get.html"><img src="public/images/data_get.png">R&eacute;cup&eacute;rer mes donn&eacute;es chez une entreprise</a>
+    <a href="User_data_modify_2.html"><img src="public/images/data_get.png">R&eacute;cup&eacute;rer mes donn&eacute;es chez une entreprise</a>
     <a href="User_data_modify.html"><img src="public/images/data_modify.png">Demander une rectification sur mes donn&eacute;es</a>
     <a href="User_data_delete.html"><img src="public/images/data_delete.png">Demander la suppression de mes donn&eacute;es</a>
   </div>
@@ -123,39 +123,11 @@
         <th class="date">Date de modification</th>
         <th class="download">T&eacute;l&eacute;charger</th>
       </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
     </table>
   </div>
 
 
-  <!--Request in progress-->
+  <!--Request finished-->
   <div id="finished" class="table">
     <h2>Demandes d&eacute;j&agrave; trait&eacute;es</h2>
     <table >
@@ -167,40 +139,12 @@
         <th class="date">Date de modification</th>
         <th class="download">T&eacute;l&eacute;charger</th>
       </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
-      <tr>
-        <td class="view"><img src="public/images/file.png" onmouseover="this.src='public/images/file_hover.png'" onmouseout="this.src='public/images/file.png'"></td>
-        <td class="name">Demande d&#39;acc&egrave;s</td>
-        <td class="company">BNP Paribas</td>
-        <td class="date">14/02/2018</td>
-        <td class="download"><img src="public/images/download.png" onmouseover="this.src='public/images/download_hover.png'" onmouseout="this.src='public/images/download.png'"></td>
-      </tr>
     </table>
   </div>
 
   <!--Infos-->
   <div id ="infos">
-     <p>Tu as rappatri&eacute; tes donn&eacute;es personnelles chez cette entreprise pour la derni&egrave;re fois le : 12/03/2018</p>
+     <p>Tu n'as pas encore rappatri&eacute; tes donn&eacute;es personnelles de cette entreprise</p>
      <a href=""><img src="public/images/question.png"><p>En savoir plus</p></a>
   </div>
 

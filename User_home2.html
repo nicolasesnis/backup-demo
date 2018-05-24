@@ -13,7 +13,6 @@
 
 <!--***********-SIDEBAR-**********-->
 <div id="particles-js"></div>
-
  <nav id="sidenav">
   <!--Link Menu-->
   <table id ="menu">
@@ -70,109 +69,68 @@
     <!--Copyrights text-->
     <div id= "copy"<p>2018 Copyright @ yser <span id = "extra"><br/>yser, Self-Sovereign identity for Documents and ID - All rights reserved</span></p></div>
   </footer>
+
 <!--**********************-NAVIGATION END-*****************-->
 
 <!--*********************-HEADER-**** **********************-->
 <header>
   <div>
     <button><img src="public/images/settings.png" onmouseover="this.src='public/images/settings_hover.png'" onmouseout="this.src='public/images/settings.png'"/></button>
-    <button style="display: none" id="sign_in" class="log" >S&#39;identifier</button>
+    <button id="sign_in" class="log" style="display: none" >S'identifier</button>
     <button  onclick="document.location = 'index.html'" id="sign_out" class="log">D&eacute;connexion</button>
     <br/>
-    <h1><a href="User_data.html">&#8592;</a>&emsp;R&eacute;cup&eacute;rer mes donn&eacute;es chez une entreprise - (&Eacute;tape 1/2)</h1>
-    <p>Commence par s&eacute;lectionner une entreprise aupr&egrave;s de laquelle tu souhaites r&eacute;cup&eacute;rer tes donn&eacute;es personnelles<br/>Important : n&rsquo;ajoute que des entreprises avec lesquelles tu interagis et/ou qui sont susceptibles de d&eacute;tenir des donn&eacute;es &agrave; ton sujet !</p>
+    <h1>Salut Tim !</h1>
+    <p>C&#039;est bon de te revoir ! Tu es bien connect&eacute; sur yser, la plateforme pour r&eacute;cup&eacute;rer et contr&ocirc;ler tes donn&eacute;es personnelles.</p>
   </div>
 </header>
 <!--**********************-Header END-**********************-->
 
-<!--*******************************************-MAIN-*******************************************-->
-<div id= "main">
+<!--*********************-MAIN-******************************-->
+<div id= "main" class="flexBox">
 
-  <!--Search Form-->
-  <div id="search">
-    <form action="">
-      <input type="text" placeholder="Chercher une entreprise" name="search">
-      <button type="submit"><img src="public/images/search.png"></button>
-    </form>
+  <div id="yser" class="home">
+    <img src="public/images/yser.png"/>
+    <h1>YSER : QUI SOMMES NOUS ?</h1>
+    <p>yser a pour vocation d&#39;aider les particuliers  &agrave; exercer leur droit  &agrave; la protection des donn&eacute;es personnelles et   &agrave; garder une vision claire de la gestion et du traitement de ces donn&eacute;es. Les entreprises qui offrent cette transparence au travers de yser se conforment   &agrave; la nouvelle r&eacute;glementation tout en construisant un lien de confiance b&eacute;n&eacute;fique avec leurs clients.
+    <p/>
+    <p>yser se veut &ecirc;tre   &agrave; l&#39;initiative de cet &eacute;cosyst&egrave;me en facilitant les &eacute;changes entre les titulaires de droits et les responsables du traitement des donn&eacute;es.<p/>
+    <a>En savoir plus</a>
   </div>
 
-  <div id="specification">
-  <img src="public/images/question.png"><p>Les entreprises dans la liste ci-contre sont nos partenaires, elles ont d&eacute;j&agrave; travaill&eacute; avec yser et pourront acc&eacute;der &agrave; ta demande rapidement. Tu ne trouves pas l'entreprise qui t&rsquo;int&eacute;resse ? Clique <a href="User_companies_request.html">ici</a> pour faire valoir tes droits aupr&egrave;s d'une autre entreprise. Nous la contacterons et lui proposons de te r&eacute;pondre via yser.</p>
+  <div id="data" class="home">
+    <img src="public/images/data.png" style="float: left; margin-right: 20px;"/>
+    <h2 onclick="document.location = 'User_data.html'">Mes Donn&eacute;es</h2>
+    <p>C&#39;est ici que sont stock&eacute;es toutes les donn&eacute;es que tu r&eacute;cup&egrave;res aupr&egrave;s d&#39;entreprises, ainsi que tes autres donn&eacute;es personnelles.</p>
+    <hr>
+    <img src="public/images/hub.png" style="float: right ;margin-left: 20px;"/>
+    <h2>Permission Hub</h2>
+    <p>Depuis le Hub, tu contr&ocirc;les qui peut avoir acc&egrave;s aux donn&eacute;es de ton coffre-fort. Choisis les entreprises qui peuvent acc&eacute;der &agrave; tes donn&eacute;es.</p>
   </div>
 
-  <br/>
-
-  <div id="companies">
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/oui.jpg"/></div>
-      <hr>
-      <h1>Oui SCNF</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/lydia.jpg"/></div>
-      <hr>
-      <h1>Lydia</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/bnp.png"/></div>
-      <hr>
-      <h1>bnp paribas</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/spotify.png"/></div>
-      <hr>
-      <h1>Spotify</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/decathlon.jpg"/></div>
-      <hr>
-      <h1>Decathlon</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/mgen.png"/></div>
-      <hr>
-      <h1>mgen</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/fnac.png "/></div>
-      <hr>
-      <h1>Fnac</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/zara.png"/></div>
-      <hr>
-      <h1>Zara</h1>
-    </div>
-    <div class="infos">
-      <div id="img"><img src="public/images/companies/lemonde.jpg"/></div>
-      <hr>
-      <h1>Le Monde</h1>
-    </div>
+  <div id="law" class="home">
+    <img src="public/images/law.png"/>
+    <h1>DONN&Eacute;ES PERSONNELLES :</br> QUELS SONT MES DROITS ?</h1>
+    <p>En tant que citoyen Europ&eacute;en, tu as des droits sur les donn&eacute;es personnelles que tu confies chaque jour aux entreprises, et yser est l&agrave; pour t&#39;aider &agrave; les exercer. Le RGPD (R&eacute;glement Europ&eacute;en sur la Protection des Donn&eacute;es, mai 2018), te conf&egrave;re les droits suivants sur tes donn&eacute;es personnelles :
+    <br/>- Droit &agrave; l&#39;acc&egrave;s
+    <br/>- Droit &agrave; l&#39;oubli
+    <br/>- Droit &agrave; la rectification
+    <br/>- Droit &agrave; la portabilit&eacute;</p>
+    <p>En savoir plus</p>
   </div>
-
+  <div id="company" class="home">
+    <h1>CES ENTREPRISES QUI ONT FAIT <br/> LE PARI DE LA TRANSPARENCE</h1>
+    <img src="public/images/company.png"/>
+    <p>Nous collaborons avec des entreprises qui ont pris le tournant de la transparence.</p>
+    <p>Le d&eacute;veloppement de nouveaux droits conf&eacute;r&eacute;s &agrave; l&#39;individu sur ses donn&eacute;es doit &ecirc;tre l&#39;occasion d&#39;instaurer une relation de confiance entre services et utilisateurs plut&ocirc;t que de faire na&icirc;tre entre eux un rapport de d&eacute;fiance. L&#39;heure est &agrave; l&#39;&eacute;mergence d&#39;une telle collaboration plut&ocirc;t qu&#39;&agrave; la d&eacute;fense aveugle d&#39;une politique de r&eacute;tention des donn&eacute;es personnelles.</p>
+    </p>Voir la liste compl&egrave;te des entreprises</p>
+  </div>
 </div>
-<!--*******************************************MAIN END**************************************-->
+<!--***********************MAIN END******************-->
 </body>
 
-<!--******************JS Scripts***************-->
-
-<!-- Responsive Sidebar -->
 <script src="public/js/sidenav.js"></script>
-
-<!-- Interactive background -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 <script  src="public/js/background.js"></script>
 
-<!-- onclick companies Not to be included in final draft -->
-<script>
-
-var company = document.getElementsByClassName("infos");
-
-for (var i = 0; i < company.length; i++)
-{
-    company[i].onclick = function() {
-        document.location = 'User_data_modify_2.html';
-    }
-}
-</script>
 </html>
